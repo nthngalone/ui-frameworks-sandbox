@@ -1,0 +1,38 @@
+{
+  "name": "@ui-frameworks-sandbox/dojo-1",
+  "version": "1.0.0",
+  "description": "A UI example using the Dojo 1.x Toolkit",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build.sh",
+    "postinstall": "./dojo-postinstall.sh",
+    "serve": "npx http-server dist",
+    "start": "npm run build && npm run serve",
+    "test": "intern"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nthngalone/ui-frameworks-sandbox.git"
+  },
+  "keywords": [
+    "UI",
+    "SPA",
+    "Dojo",
+    "Dojo Toolkit"
+  ],
+  "author": "NthngAlone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nthngalone/ui-frameworks-sandbox/issues"
+  },
+  "homepage": "https://github.com/nthngalone/ui-frameworks-sandbox#readme",
+  "dependencies": {
+    "chromedriver": "^112.0.0",
+    "dijit": "^1.17.3",
+    "dojo": "^1.17.3"
+  },
+  "devDependencies": {
+    "dojo-util": "^1.17.3",
+    "intern": "^4.10.1"
+  }
+}

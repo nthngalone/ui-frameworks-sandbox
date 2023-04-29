@@ -1,0 +1,25 @@
+{
+  "name": "@ui-frameworks-sandbox/ember",
+  "version": "1.0.0",
+  "description": "A UI example using the Ember framework",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nthngalone/ui-frameworks-sandbox.git"
+  },
+  "keywords": [
+    "UI",
+    "SPA",
+    "Ember"
+  ],
+  "author": "NthngAlone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nthngalone/ui-frameworks-sandbox/issues"
+  },
+  "homepage": "https://github.com/nthngalone/ui-frameworks-sandbox#readme"
+}

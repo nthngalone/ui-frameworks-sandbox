@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <style>
+            .calculator {
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .calculator .register {
+                border: 1px solid #999;
+                margin-bottom: 5px;
+            }
+            .calculator .controls {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                column-gap: 5px;
+                row-gap: 5px;
+            }
+        </style>
+        <script>
+            var dojoConfig = {
+                async: true,
+                packages: [
+                    { name: 'nthngalone', location: '/nthngalone' }
+                ],
+                locale: "en",
+                parseOnLoad: true,
+                deps: [ "dojo/parser" ]
+            };
+        </script>
+        <script src="./nthngalone-dojo-1/main.js.uncompressed.js"></script>
+    </head>
+    <body>
+        <div data-dojo-type="nthngalone-dojo-1/CalculatorWidget"></div>
+    </body>
+</html>

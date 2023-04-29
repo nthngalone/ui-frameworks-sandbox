@@ -1,0 +1,21 @@
+{
+  "name": "@ui-frameworks-sandbox/vue-3",
+  "version": "1.0.0",
+  "description": "A UI example using the Vue.js 3 framework",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nthngalone/ui-frameworks/sandbox.git"
+  },
+  "keywords": [
+    "UI",
+    "SPA",
+    "Vue"
+  ],
+  "author": "NthngAlone",
+  "license": "MIT"
+}

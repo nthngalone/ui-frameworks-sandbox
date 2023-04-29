@@ -1,0 +1,23 @@
+{
+    "loader": {
+        "script": "dojo",
+        "options": {
+            "internLoaderPath": "./dojo-toolkit/dojo/dojo.js",
+            "packages": [
+                { "name": "nthngalone", "location": "./nthngalone" },
+                { "name": "dojo",       "location": "./dojo-toolkit/dojo" },
+                { "name": "dijit",      "location": "./dojo-toolkit/dijit" }
+            ]
+        }
+    },
+    "browser": {
+        "suites": ["./tests.js"]
+    },
+    "filterErrorStack": false,
+    "environments": [ "chrome" ],
+    "tunnelOptions": {
+        "drivers": [
+            { "name": "chrome", "version": "111.0.5563.64" }
+        ]
+    }
+}
