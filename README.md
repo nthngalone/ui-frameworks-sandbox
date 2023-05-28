@@ -8,21 +8,28 @@ I used to have a local project where I did this kind of work, but have lost trac
 
 Progress on this project will probably jump around as time and interest allows.  The chart below will be used to track progress across all of the different frameworks.
 
-| Framework                       | Source             |       Build        | Tests |        Notes       |
-|---------------------------------|:------------------:|:------------------:|:-----:|:------------------:|
-| [Angular](./packages/angular)   |                    |                    |       |                    |
-| [Backbone](./packages/backbone) |                    |                    |       |                    |
-| [Dojo 1.x](./packages/dojo-1)   | :heavy_check_mark: | :heavy_check_mark: |  :x:  | :heavy_check_mark: |
-| [Dojo 8](./packages/dojo-8)     |                    |                    |       |                    |
-| [Ember](./packages/ember)       |                    |                    |       |                    |
-| [React](./packages/react)       |                    |                    |       |                    |
-| [Solid.js](./packages/solidjs)  |                    |                    |       |                    |
-| [Svelte](./packages/svelte)     |                    |                    |       |                    |
-| [Vue 2](./packages/vue-2)       |                    |                    |       |                    |
-| [Vue 3](./packages/vue-3)       |                    |                    |       |                    |
+| Framework                       | Source             |       Build        |       Tests        |        Notes       |
+|---------------------------------|:------------------:|:------------------:|:------------------:|:------------------:|
+| [Angular](./packages/angular)   |                    |                    |                    |                    |
+| [Backbone](./packages/backbone) |                    |                    |                    |                    |
+| [Dojo 1.x](./packages/dojo-1)   | :heavy_check_mark: | :heavy_check_mark: |        :x:         | :heavy_check_mark: |
+| [Dojo 8](./packages/dojo-8)     |                    |                    |                    |                    |
+| [Ember](./packages/ember)       |                    |                    |                    |                    |
+| [React](./packages/react)       |                    |                    |                    |                    |
+| [Solid.js](./packages/solidjs)  |                    |                    |                    |                    |
+| [Svelte](./packages/svelte)     |                    |                    |                    |                    |
+| [Vue 2](./packages/vue-2)       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Vue 3](./packages/vue-3)       |                    |                    |                    |                    |
 
 ### Legend
 
 * :white_check_mark: In Progress
 * :heavy_check_mark: Complete
 * :x: Blocked
+
+## Potential Candidates to Explore
+
+Here are a few other potential UI frameworks to look at in the future:
+- [Qwik](https://qwik.builder.io/)
+- [VanJs](https://github.com/vanjs-org/van)
+- [Strawberry](https://strawberry.quest/)

@@ -7,7 +7,11 @@
     "build:dojo-1": "npm run build --workspace packages/dojo-1",
     "serve:dojo-1": "npm run serve --workspace packages/dojo-1",
     "start:dojo-1": "npm run start --workspace packages/dojo-1",
-    "test:dojo-1": "npm run test --workspace packages/dojo-1"
+    "test:dojo-1": "npm run test --workspace packages/dojo-1",
+    "build:vue-2": "npm run build --workspace packages/vue-2",
+    "lint:vue-2": "npm run lint --workspace packages/vue-2",
+    "serve:vue-2": "npm run serve --workspace packages/vue-2",
+    "test:vue-2": "npm run test --workspace packages/vue-2"
   },
   "repository": {
     "type": "git",
