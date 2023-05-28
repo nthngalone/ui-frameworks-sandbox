@@ -2,24 +2,76 @@
   "name": "@ui-frameworks-sandbox/vue-2",
   "version": "1.0.0",
   "description": "A UI example using the Vue.js 2 framework",
-  "main": "index.js",
-  "devDependencies": {},
+  "author": "NthngAlone",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nthngalone/ui-frameworks-sandbox.git"
+  "main": "index.js",
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14"
   },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli": "^5.0.8",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^1.1.3",
+    "@vue/vue2-jest": "^27.0.0-alpha.2",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "jest": "^27.0.5",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "bugs": {
+    "url": "https://github.com/nthngalone/ui-frameworks-sandbox/issues"
+  },
+  "homepage": "https://github.com/nthngalone/ui-frameworks-sandbox#readme",
   "keywords": [
     "UI",
     "SPA",
     "Vue"
   ],
-  "author": "NthngAlone",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nthngalone/ui-frameworks-sandbox/issues"
-  },
-  "homepage": "https://github.com/nthngalone/ui-frameworks-sandbox#readme"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nthngalone/ui-frameworks-sandbox.git"
+  }
 }
