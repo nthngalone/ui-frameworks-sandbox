@@ -1,4 +1,5 @@
-class Calculator {
+/* ESM version of Calculator class generaged by [npm run build:ESM] script */
+export default class Calculator {
     constructor() {
         this.clear();
     }

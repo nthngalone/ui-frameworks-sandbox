@@ -23,37 +23,49 @@
 </template>
 
 <script>
+import { reactive, computed, defineComponent } from 'vue';
 import Calculator from '@ui-frameworks-sandbox/common/lib/CalculatorESM';
 
-export default {
-  name: 'CalculatorApp',
-  computed: {
-    register() {
-      return this.calculator.register;
+export default defineComponent({
+    setup(props, context) {
+
+        // Reactive data
+        const calculator = reactive(new Calculator());
+
+        // Computed getters
+        const register = computed(() => {
+            return calculator.register;
+        });
+
+        // Methods
+        const inputOperand = (evt) => {
+            const inputValue = evt.target.textContent;
+            calculator.inputOperand(inputValue);
+        };
+
+        const inputOperator = (evt) => {
+            const inputValue = evt.target.textContent;
+            calculator.inputOperator(inputValue);
+        };
+
+        const calculate = () => {
+            calculator.calculate();
+        };
+
+        const clear = () => {
+            calculator.clear();
+        };
+
+        return {
+            calculator,
+            register,
+            inputOperand,
+            inputOperator,
+            calculate,
+            clear
+        };
     }
-  },
-  data() {
-    return {
-      calculator: new Calculator()
-    };
-  },
-  methods: {
-    inputOperand(evt) {
-        const inputValue = evt.target.textContent;
-        this.calculator.inputOperand(inputValue);
-    },
-    inputOperator(evt) {
-        const inputValue = evt.target.textContent;
-        this.calculator.inputOperator(inputValue);
-    },
-    calculate() {
-        this.calculator.calculate();
-    },
-    clear() {
-        this.calculator.clear();
-    }
-  }
-}
+});
 </script>
 
 <style>

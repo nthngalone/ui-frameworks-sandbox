@@ -4,7 +4,7 @@ define([
     'dijit/_TemplatedMixin',
     'dojo/text!./CalculatorWidget.html',
     'dojo/on',
-    'nthngalone-common/Calculator',
+    'nthngalone-common/lib/CalculatorAMD',
     'dojo/query'
 ], (declare, _WidgetBase, _TemplatedMixin, template, on, Calculator) => {
 

@@ -5,7 +5,10 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:AMD && npm run build:CJS && npm run build:ESM",
+    "build:AMD": "echo '/* AMD version of Calculator class generaged by [npm run build:AMD] script */' > lib/CalculatorAMD.js && cat Calculator.js >> lib/CalculatorAMD.js && echo 'define([], () => Calculator);' >> lib/CalculatorAMD.js",
+    "build:CJS": "echo '/* CJS version of Calculator class generaged by [npm run build:CJS] script */' > lib/CalculatorCJS.js && cat Calculator.js >> lib/CalculatorCJS.js && echo 'module.exports = Calculator;' >> lib/CalculatorCJS.js",
+    "build:ESM": "echo '/* ESM version of Calculator class generaged by [npm run build:ESM] script */' > lib/CalculatorESM.js && cat Calculator.js >> lib/CalculatorESM.js && sed -i 's/class Calculator/export default class Calculator/' lib/CalculatorESM.js"
   },
   "repository": {
     "type": "git",

@@ -3,9 +3,20 @@
   "version": "1.0.0",
   "description": "A UI example using the Vue.js 3 framework",
   "main": "index.js",
-  "devDependencies": {},
+  "dependencies": {
+    "vue": "^3.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/test-utils": "^2.3.2",
+    "jsdom": "^22.0.0",
+    "vite": "^4.3.5",
+    "vitest": "^0.31.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "serve": "vite",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",

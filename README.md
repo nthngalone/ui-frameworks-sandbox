@@ -19,7 +19,7 @@ Progress on this project will probably jump around as time and interest allows. 
 | [Solid.js](./packages/solidjs)  |                    |                    |                    |                    |
 | [Svelte](./packages/svelte)     |                    |                    |                    |                    |
 | [Vue 2](./packages/vue-2)       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| [Vue 3](./packages/vue-3)       |                    |                    |                    |                    |
+| [Vue 3](./packages/vue-3)       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ### Legend
 
