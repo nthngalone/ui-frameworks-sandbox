@@ -1,3 +1,4 @@
+/* AMD version of Calculator class generaged by [npm run build:AMD] script */
 class Calculator {
     constructor() {
         this.clear();
@@ -52,3 +53,4 @@ class Calculator {
         this.updateRegister();
     }
 }
+define([], () => Calculator);

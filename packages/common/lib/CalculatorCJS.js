@@ -1,3 +1,4 @@
+/* CJS version of Calculator class generaged by [npm run build:CJS] script */
 class Calculator {
     constructor() {
         this.clear();
@@ -52,3 +53,4 @@ class Calculator {
         this.updateRegister();
     }
 }
+module.exports = Calculator;
